@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaMap, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import WhatsAppButton from '../components/WhatsAppButton';
 
 const Contact = () => {
   const [username, setUsername] = useState("");
@@ -18,8 +19,10 @@ const Contact = () => {
       setErrMsg("Enter your Messages");
     } else {
       setSuccessMsg(
-        `Hell dear ${username}, Thank you for your Messages. Additional Information will send to you shortly via your email at ${email}`
+        `Hell dear ${username} ${email}, Thank you for reaching out. We got your query : ${message} . We will respond on it shortly`
       );
+      <WhatsAppButton message={`Hell dear ${username} ${email}, Thank you for reaching out. We got your query : ${message} . We will respond on it shortly`
+      } />
     }
   };
 
@@ -36,15 +39,16 @@ const Contact = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex flex-col items-center gap-3">
               <FaMap className="text-4xl text-designColor" />
-              <p className="text-sm tracking-wide">Muscat, Oman</p>
+              <p className="text-sm tracking-wide">Sunderdas Saw Mill Compound</p>
+              <p className="text-sm tracking-wide">Reay Road Mumbai, Maharashtra, India</p>
             </div>
             <div className="flex flex-col items-center gap-3">
               <FaPhoneAlt className="text-4xl text-designColor" />
-              <p className="text-sm tracking-wide">+96824769821</p>
+              <p className="text-sm tracking-wide">+91 9569690457</p>
             </div>
             <div className="flex flex-col items-center gap-3">
               <FaEnvelope className="text-4xl text-designColor" />
-              <p className="text-sm tracking-wide">noorjsdivs@gmail.com</p>
+              <p className="text-sm tracking-wide">nbtubeindia@gmail.com</p>
             </div>
           </div>
 
@@ -97,12 +101,12 @@ const Contact = () => {
               <p>
                 or say 'Hello' -{" "}
                 <span className="font-semibold text-designColor">
-                  reactjsbd@gmail.com
+                  nbtubeindia@gmail.com
                 </span>
               </p>
             </div>
             <a href="https://reactbd.com/" target="_blank">
-              <p>© 2022 reactBD All rights reserved.</p>
+              <p>© 2024 NbTubeIndia All rights reserved.</p>
             </a>
           </div>
         </div>

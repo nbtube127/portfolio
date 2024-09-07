@@ -40,19 +40,19 @@ const Testimonial = () => {
         style={
           i === dotActive
             ? {
-                width: "12px",
-                height: "12px",
-                borderRadius: "50%",
-                cursor: "pointer",
-                border: "1px solid #F7D449",
-              }
+              width: "12px",
+              height: "12px",
+              borderRadius: "50%",
+              cursor: "pointer",
+              border: "1px solid #F7D449",
+            }
             : {
-                width: "12px",
-                height: "12px",
-                borderRadius: "50%",
-                cursor: "pointer",
-                border: "1px solid #aeaeae",
-              }
+              width: "12px",
+              height: "12px",
+              borderRadius: "50%",
+              cursor: "pointer",
+              border: "1px solid #aeaeae",
+            }
         }
       ></div>
     ),
@@ -67,35 +67,20 @@ const Testimonial = () => {
           <Slider {...settings}>
             <div>
               <p className="text-xl text-textColor text-center leading-8">
-                <span className="text-white">Apple company CEO -</span> Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                doloribus sed asperiores commodi earum consectetur dolorem,
-                eligendi animi minus. Reprehenderit laboriosam ipsa quia
-                dignissimos voluptatum aliquid et repudiandae laborum impedit
-                perferendis quis, sapiente doloribus eaque maxime nemo facere?
-                At, facilis!
+                <span className="text-white">Pankaj -</span> NbTube's iron tubes are top-notch—durable and reliable.
+                Their exceptional customer service and quick delivery make them our go-to supplier.
               </p>
             </div>
             <div>
               <p className="text-xl text-textColor text-center leading-8">
-                <span className="text-white">Google company CTO -</span> Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                doloribus sed asperiores commodi earum consectetur dolorem,
-                eligendi animi minus. Reprehenderit laboriosam ipsa quia
-                dignissimos voluptatum aliquid et repudiandae laborum impedit
-                perferendis quis, sapiente doloribus eaque maxime nemo facere?
-                At, facilis!
+                <span className="text-white">Raj Dairy -</span> We trust NbTube for all our industrial projects.
+                Their high-quality iron tubes and commitment to precision consistently exceed our expectations.
               </p>
             </div>
             <div>
               <p className="text-xl text-textColor text-center leading-8">
-                <span className="text-white">Amazon company CEO -</span> Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                doloribus sed asperiores commodi earum consectetur dolorem,
-                eligendi animi minus. Reprehenderit laboriosam ipsa quia
-                dignissimos voluptatum aliquid et repudiandae laborum impedit
-                perferendis quis, sapiente doloribus eaque maxime nemo facere?
-                At, facilis!
+                <span className="text-white">MM Builders -</span> NbTube has been a game-changer for us.
+                Their iron tubes are built to last, and their professionalism ensures smooth, hassle-free transactions.
               </p>
             </div>
           </Slider>

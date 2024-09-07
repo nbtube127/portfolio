@@ -8,21 +8,14 @@ const AboutMe = () => {
     >
       <div className="max-w-6xl mx-auto flex flex-col gap-6 md:gap-16">
         <h1 className="text-3xl uppercase font-semibold text-center">
-          A Story about me.
+          About us.
         </h1>
         <p className="text-xl md:text-3xl font-medium md:leading-relaxed text-textColor">
-          I'm{" "}
-          <span className="font-bold tracking-wider text-white">
-            Sarah Jonson
-          </span>{" "}
-          and I'm a freelance{" "}
-          <span className="font-bold text-white">Web Designer</span>. Lorem
-          Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the
-          1500s, when an unknown printer took a galley of type and scrambled it
-          to make a type specimen book.
+          <span className="font-bold tracking-wider text-white">Nbtubeindia</span>{" "} is a leading provider of high-quality
+           industrial iron pipes across India.Our portfolio website highlights our rich company history, experienced team, diverse product range,
+          industry expertise, commitment to quality assurance, latest news, contact details.
         </p>
-        <div className="w-[700px] grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* <div className="w-[700px] grid grid-cols-1 md:grid-cols-2 gap-8">
           <AboutList title="Web design" />
           <AboutList title="Graphic & print" />
           <AboutList title="iOS design" />
@@ -32,7 +25,7 @@ const AboutMe = () => {
           <AboutList title="Back-end development" />
           <AboutList title="Responsive" />
           <AboutList title="Wordpress Website" />
-        </div>
+        </div> */}
       </div>
     </section>
   );

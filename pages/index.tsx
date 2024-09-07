@@ -13,15 +13,15 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Test blog | New Horizon</title>
+        <title>NBTubeIndia</title>
         <link rel="icon" href="/smallLogo.ico" />
       </Head>
 
       <div className="font-bodyFont">
         <Banner />
         <AboutMe />
-        <Offers />
         <Works />
+        <Offers />
         <Testimonial />
         <Contact />
       </div>

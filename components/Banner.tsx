@@ -44,9 +44,11 @@ const Banner = () => {
           }}
           className="w-full px-16 py-6 flex justify-between fixed top-0 z-40 bg-black bg-opacity-25"
         >
-          <h1 className="font-bodyFont text-4xl text-white font-extrabold border-2 w-12 text-center">
-            S
-          </h1>
+          <img
+            src="/assets/nbtube_logo.jpg"
+            alt="Logo"
+            className="w-12 h-12 object-contain border-2"
+          />
           <div
             onClick={() => setMenu(true)}
             className="w-8 h-6 group flex flex-col items-center justify-between cursor-pointer"
@@ -58,14 +60,14 @@ const Banner = () => {
         </nav>
         <div className="w-full h-full flex flex-col justify-center items-center text-white px-4">
           <h1 className="text-[50px] md:text-[80px] lg:text-[100px] font-black">
-            I'm Sarah Jonson
+            NbTube India
           </h1>
           <div className="flex items-center gap-2 md:gap-6 text-base md:text-xl font-bold bg-designColor px-6 py-3">
-            <h2 className="tracking-[4px]">LEADER</h2>
+            <h2 className="tracking-[4px]">STRENGTH</h2>
             <HiMinus className="text-2xl rotate-90" />
-            <h2 className="tracking-[4px]">DESIGNER</h2>
+            <h2 className="tracking-[4px]">DURABILITY</h2>
             <HiMinus className="text-2xl rotate-90" />
-            <h2 className="tracking-[4px]">YOUTUBER</h2>
+            <h2 className="tracking-[4px]">RELIABILITY</h2>
           </div>
         </div>
       </div>
@@ -148,11 +150,11 @@ const Banner = () => {
                 </ul>
               </div>
               <div className="text-lg font-thin mt-32">
-                <p>For project enquries</p>
+                <p>For any enquries</p>
                 <p>
-                  or say 'Hello' -{" "}
+                  say Email At -{" "}
                   <span className="font-semibold text-designColor">
-                    reactjsbd@gmail.com
+                  nbtubeindia@gmail.com
                   </span>
                 </p>
               </div>
