@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import { FaMap, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-import { FaWhatsapp } from 'react-icons/fa'
+import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   const handleSubmit = (e: any) => {
     e.preventDefault(e);
-    const phoneNumber = "919517188738"; 
-    const encodedMessage = encodeURIComponent(
-      `Hello! My query is:`
-    );
+
+    const phoneNumber = "919569690457";
+    const encodedMessage = encodeURIComponent(`Hello! My query is:`);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(whatsappUrl, "_blank");
   };
@@ -26,14 +25,21 @@ const Contact = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex flex-col items-center gap-3">
               <FaMap className="text-4xl text-designColor" />
-              <p className="text-sm tracking-wide">Sunderdas Saw Mill Compound</p>
-              <p className="text-sm tracking-wide">Reay Road Mumbai, Maharashtra, India</p>
+              <p className="text-sm tracking-wide">
+                Sunderdas Saw Mill Compound
+              </p>
+              <p className="text-sm tracking-wide">
+                Reay Road Mumbai, Maharashtra, India
+              </p>
             </div>
             <div className="flex flex-col items-center gap-3">
               <FaPhoneAlt className="text-4xl text-designColor" />
               <p className="text-sm tracking-wide">+91 9569690457</p>
             </div>
-            <div onClick={handleSubmit} className="flex flex-col items-center gap-3">
+            <div
+              onClick={handleSubmit}
+              className="flex flex-col items-center gap-3"
+            >
               <FaWhatsapp className="text-4xl text-designColor" />
               <p className="text-sm tracking-wide">Message us</p>
             </div>

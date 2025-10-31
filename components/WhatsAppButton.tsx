@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface WhatsAppButtonProps {
   message: string;
@@ -9,7 +9,7 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({ message }) => {
 
   const handleClick = () => {
     const url = `https://wa.me/9569690457?text=${encodedMessage}`;
-    window.open(url, '_blank');
+    window.open(url, "_blank");
   };
 
   return (
@@ -20,13 +20,13 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({ message }) => {
 };
 
 const buttonStyle: React.CSSProperties = {
-  backgroundColor: '#25D366', // WhatsApp green
-  color: 'white',
-  border: 'none',
-  borderRadius: '5px',
-  padding: '10px 20px',
-  cursor: 'pointer',
-  fontSize: '16px',
+  backgroundColor: "#25D366", // WhatsApp green
+  color: "white",
+  border: "none",
+  borderRadius: "5px",
+  padding: "10px 20px",
+  cursor: "pointer",
+  fontSize: "16px",
 };
 
 export default WhatsAppButton;
