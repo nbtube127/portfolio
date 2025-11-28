@@ -8,6 +8,8 @@ import Works from "../components/Works";
 import Testimonial from "../components/Testimonial";
 import Contact from "../components/Contact";
 import ScrollBtn from "../components/ScrollBtn";
+import EnquiryPopup from "../components/EnquiryPopup";
+import EnquiryInline from "../components/EnquiryInline";
 
 const Home: NextPage = () => {
   return (
@@ -18,7 +20,9 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="font-bodyFont">
+        <EnquiryPopup />
         <Banner />
+        <EnquiryInline />
         <AboutMe />
         <Works />
         <Offers />

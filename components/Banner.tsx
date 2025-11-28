@@ -62,13 +62,27 @@ const Banner = () => {
           <h1 className="text-[50px] md:text-[80px] lg:text-[100px] font-black">
             NbTube India
           </h1>
-          <div className="flex items-center gap-2 md:gap-6 text-base md:text-xl font-bold bg-designColor px-6 py-3">
+          <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 md:gap-6 text-sm sm:text-base md:text-xl font-bold bg-designColor px-4 py-3 text-center">
+  <h2 className="tracking-[2px] sm:tracking-[3px] md:tracking-[4px]">
+    STRENGTH
+  </h2>
+  <HiMinus className="text-lg sm:text-xl md:text-2xl rotate-90" />
+  <h2 className="tracking-[2px] sm:tracking-[3px] md:tracking-[4px]">
+    DURABILITY
+  </h2>
+  <HiMinus className="text-lg sm:text-xl md:text-2xl rotate-90" />
+  <h2 className="tracking-[2px] sm:tracking-[3px] md:tracking-[4px]">
+    RELIABILITY
+  </h2>
+</div>
+
+          {/* <div className="flex items-center gap-2 md:gap-6 text-base md:text-xl font-bold bg-designColor px-6 py-3">
             <h2 className="tracking-[4px]">STRENGTH</h2>
             <HiMinus className="text-2xl rotate-90" />
             <h2 className="tracking-[4px]">DURABILITY</h2>
             <HiMinus className="text-2xl rotate-90" />
             <h2 className="tracking-[4px]">RELIABILITY</h2>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* =========== Menu Icon status Start here ========= */}
