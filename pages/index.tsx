@@ -30,6 +30,10 @@ const Home: NextPage = () => {
         <Contact />
       </div>
       <ScrollBtn />
+      {/* Footer with Privacy Policy link */}
+      <footer className="w-full text-center py-4 bg-black text-gray-400 text-sm mt-8">
+        <a href="/privacy-policy" className="hover:underline">Privacy Policy</a>
+      </footer>
     </div>
   );
 };

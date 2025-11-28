@@ -49,7 +49,7 @@ const Contact = () => {
               <p className="text-sm tracking-wide">nbtubeindia@gmail.com</p>
             </div>
           </div>
-          <div className="w-full py-10 bg-black flex flex-col md:flex-row px-4 md:items-center justify-between">
+          <div className="w-full py-10 bg-black flex flex-col md:flex-row px-4 md:items-center justify-between gap-2">
             <div className="text-lg font-thin">
               <p>For project enquries</p>
               <p>
@@ -59,9 +59,17 @@ const Contact = () => {
                 </span>
               </p>
             </div>
-            <a href="https://reactbd.com/" target="_blank">
-              <p>© 2024 NbTubeIndia All rights reserved.</p>
-            </a>
+            <div className="flex flex-col items-end md:items-center">
+              <a
+                href="/privacy-policy"
+                className="text-base text-gray-400 mb-1 px-2 py-1 rounded transition duration-200 hover:bg-designColor hover:text-white hover:underline cursor-pointer"
+              >
+                Privacy Policy
+              </a>
+              <a href="https://reactbd.com/" target="_blank">
+                <p>© 2024 NbTubeIndia All rights reserved.</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
