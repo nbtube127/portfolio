@@ -55,10 +55,11 @@ const EnquiryPopup: React.FC = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const GOOGLE_SCRIPT_URL =
-    "https://script.google.com/macros/s/AKfycbxXCZ0bQPFlEYz9fTfPOyT2m_46z1v74f7gpsEK2KlP1aViXzd-a2Ab-UTibK18TcGWAg/exec";
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  // WhatsApp number and message template
+  const WHATSAPP_NUMBER = "9569690457";
+
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!validate()) {
@@ -69,30 +70,17 @@ const EnquiryPopup: React.FC = () => {
     }
 
     setLoading(true);
-    try {
-      const res = await fetch(GOOGLE_SCRIPT_URL, {
-        method: "POST",
-        body: new FormData(e.target as HTMLFormElement),
-      });
-
-      if (res.ok) {
-        toast.success("Enquiry submitted successfully!", {
-          icon: <CheckCircle className="text-white" />,
-        });
-        setFormData({ name: "", phone: "" });
-        setTimeout(() => setIsOpen(false), 1500);
-      } else {
-        toast.error("Error submitting form. Please try again.", {
-          icon: <XCircle className="text-white" />,
-        });
-      }
-    } catch (error) {
-      toast.error("Something went wrong!", {
-        icon: <AlertTriangle className="text-yellow-500" />,
-      });
-    } finally {
-      setLoading(false);
-    }
+    // Compose WhatsApp message
+    const message = `Hello, I would like to enquire.\nName: ${formData.name}\nPhone: ${formData.phone}`;
+    const encodedMessage = encodeURIComponent(message);
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+    window.open(url, "_blank");
+    setLoading(false);
+    setFormData({ name: "", phone: "" });
+    setTimeout(() => setIsOpen(false), 1500);
+    toast.success("WhatsApp chat opened!", {
+      icon: <CheckCircle className="text-white" />,
+    });
   };
 
   return (
